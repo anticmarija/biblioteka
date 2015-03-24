@@ -1,12 +1,14 @@
 package biblioteka;
 
+import java.util.LinkedList;
+
 public class Knjiga {
 
 	private String naslov;
 	
 	private long ISBN;
 	
-	private String autori;
+	private LinkedList<Autor> autori = new LinkedList<Autor>();
 	
 	private String izdavac;
 	
@@ -28,13 +30,6 @@ public class Knjiga {
 		ISBN = iSBN;
 	}
 
-	public String getAutori() {
-		return autori;
-	}
-
-	public void setAutori(String autori) {
-		this.autori = autori;
-	}
 
 	public String getIzdavac() {
 		return izdavac;
