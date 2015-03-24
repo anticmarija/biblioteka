@@ -48,4 +48,22 @@ public class Knjiga {
 	}
 	
 	
+	public String toString() {
+		return "Knjiga [naslov=" + naslov + ", izdavac=" + izdavac + ", ISBN="
+				+ ISBN + ", izdanje=" + izdanje + ", autori=" + autori + "]";
+	}
+	
+	
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Knjiga other = (Knjiga) obj;
+		if (ISBN != other.ISBN)
+			return false;
+		return true;
+	}
 }
